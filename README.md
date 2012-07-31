@@ -4,7 +4,7 @@ gexf4js
 GEXF format parser in JavaScript to return native, easy-to-use JavaScript types from XML
 
 Usage:
-
+```
 var resultGexf = Sys.gexfParser("/server/location.gexf");
 or 
 var gexfhttp = new XMLHttpRequest();
@@ -13,8 +13,10 @@ var gexfhttp = new XMLHttpRequest();
         gexfhttp.send();
 		
 var resultGexf = Sys.gexfParser(gexfhttp.responseXML);
+```
 
 returns:
+```
  -> edges
     [0]
 	  -> label (String)
@@ -42,3 +44,4 @@ returns:
 	    [0] (Node object)
 		[..]
 	[..]
+```
